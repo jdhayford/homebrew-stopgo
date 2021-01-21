@@ -39,9 +39,6 @@ brews:
   download_strategy: CurlDownloadStrategy.
   url_template: https://gitlab.com/<repo_owner>/<repo_name>/uploads/{{ .ArtifactUploadHash
     }}/{{ .ArtifactName }}
-  ids:
-  - foo
-  - bar
   goarm: "6"
 scoop:
   name: stopgo
