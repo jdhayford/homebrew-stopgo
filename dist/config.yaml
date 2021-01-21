@@ -17,7 +17,6 @@ brews:
   commit_author:
     name: jdhayford
     email: jdhayford@gmail.com
-  folder: Formula
   caveats: How to use this binary
   install: |
     bin.install "program"
@@ -35,9 +34,8 @@ brews:
   description: Software to create fast and easy drum rolls.
   homepage: https://jdhayford.io/
   license: MIT
-  skip_upload: "true"
   download_strategy: CurlDownloadStrategy.
-  url_template: https://gitlab.com/<repo_owner>/<repo_name>/uploads/{{ .ArtifactUploadHash
+  url_template: https://gitlab.com/jdhayford/homebrew-stopgo/uploads/{{ .ArtifactUploadHash
     }}/{{ .ArtifactName }}
   goarm: "6"
 scoop:

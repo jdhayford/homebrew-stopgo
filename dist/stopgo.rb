@@ -5,21 +5,21 @@
 class Stopgo < Formula
   desc "Software to create fast and easy drum rolls."
   homepage "https://jdhayford.io/"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://gitlab.com/<repo_owner>/<repo_name>/uploads//homebrew-stopgo_0.1.8_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "d49a009b1f0d5fe27e1044f8dccde85b2f9c91a0ac3adaf67ee465344222d535"
+    url "https://gitlab.com/jdhayford/homebrew-stopgo/uploads//homebrew-stopgo_0.1.9_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy.
+    sha256 "6316c61a7733e979f71c1c719b9927341244d8079f0242eaada090ce099bdba3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://gitlab.com/<repo_owner>/<repo_name>/uploads//homebrew-stopgo_0.1.8_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "4deabd6f78c862cc7a8cbca742a089c527e8b6b750f89e7e87723cabde817a48"
+    url "https://gitlab.com/jdhayford/homebrew-stopgo/uploads//homebrew-stopgo_0.1.9_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy.
+    sha256 "87b39e9e851c1ac02096d82d23bfc1a0dd55964b3ba22d73a41c479d26b173d1"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://gitlab.com/<repo_owner>/<repo_name>/uploads//homebrew-stopgo_0.1.8_Linux_arm64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "8878b45ddb1155903db928c03fa89d0fc334969876ae0615011775fe3e01499c"
+    url "https://gitlab.com/jdhayford/homebrew-stopgo/uploads//homebrew-stopgo_0.1.9_Linux_arm64.tar.gz", :using => CurlDownloadStrategy.
+    sha256 "055c6691b0403407cb2fd958350f2587db1509f185e64b1f46fae535b3099781"
   end
 
   depends_on "git"
