@@ -36,11 +36,6 @@ brews:
     # Default to project name
     name: stopgo
 
-    # GOARM to specify which 32-bit arm version to use if there are multiple versions
-    # from the build section. Brew formulas support atm only one 32-bit version.
-    # Default is 6 for all artifacts or each id if there a multiple versions.
-    goarm: 6
-
     # NOTE: make sure the url_template, the token and given repo (github or gitlab) owner and name are from the
     # same kind. We will probably unify this in the next major version like it is done with scoop.
 
@@ -56,29 +51,11 @@ brews:
     # Default for gitea is "https://gitea.com/<repo_owner>/<repo_name>/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
     url_template: "https://gitlab.com/jdhayford/homebrew-stopgo/uploads/{{ .ArtifactUploadHash }}/{{ .ArtifactName }}"
 
-    # Allows you to set a custom download strategy. Note that you'll need
-    # to implement the strategy and add it to your tap repository.
-    # Example: https://docs.brew.sh/Formula-Cookbook#specifying-the-download-strategy-explicitly
-    # Default is empty.
-    download_strategy: CurlDownloadStrategy.
-
     # Git author used to commit to the repository.
     # Defaults are shown.
     commit_author:
       name: jdhayford
       email: jdhayford@gmail.com
-
-    # Caveats for the user of your binary.
-    # Default is empty.
-    caveats: "How to use this binary"
-
-    # Your app's homepage.
-    # Default is empty.
-    homepage: "https://jdhayford.io/"
-
-    # Your app's description.
-    # Default is empty.
-    description: "Software to create fast and easy drum rolls."
 
     # SPDX identifier of your app's license.
     # Default is empty.
@@ -90,19 +67,3 @@ brews:
       - name: zsh
         type: optional
 
-    # Packages that conflict with your package.
-    conflicts:
-      - svn
-      - bash
-
-    # So you can `brew test` your formula.
-    # Default is empty.
-    test: |
-      system "#{bin}/program --version"
-      ...
-
-    # Custom install script for brew.
-    # Default is 'bin.install "program"'.
-    install: |
-      bin.install "program"
-      ...
