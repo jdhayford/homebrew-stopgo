@@ -1,16 +1,16 @@
-project_name: stopgo
+project_name: homebrew-stopgo
 release:
   github:
     owner: jdhayford
-    name: stopgo
+    name: homebrew-stopgo
   name_template: '{{.Tag}}'
 milestones:
 - repo:
     owner: jdhayford
-    name: stopgo
+    name: homebrew-stopgo
   name_template: '{{ .Tag }}'
 brews:
-- name: stopgo
+- name: homebrew-stopgo
   tap:
     owner: repo-owner
     name: homebrew-tap
@@ -41,13 +41,13 @@ brews:
     }}/{{ .ArtifactName }}
   goarm: "6"
 scoop:
-  name: stopgo
+  name: homebrew-stopgo
   commit_author:
     name: goreleaserbot
     email: goreleaser@carlosbecker.com
   commit_msg_template: Scoop update for {{ .ProjectName }} version {{ .Tag }}
 builds:
-- id: stopgo
+- id: homebrew-stopgo
   goos:
   - linux
   - windows
@@ -70,7 +70,7 @@ builds:
   ldflags:
   - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.Date}}
     -X main.builtBy=goreleaser
-  binary: stopgo
+  binary: homebrew-stopgo
   env:
   - CGO_ENABLED=0
   lang: go
@@ -78,7 +78,7 @@ builds:
 archives:
 - id: default
   builds:
-  - stopgo
+  - homebrew-stopgo
   name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm
     }}v{{ .Arm }}{{ end }}{{ if .Mips }}_{{ .Mips }}{{ end }}'
   replacements:

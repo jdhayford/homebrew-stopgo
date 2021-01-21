@@ -1,3 +1,3 @@
 ## Changelog
 
-8b27119 Bing
+5954704 Update brew name
