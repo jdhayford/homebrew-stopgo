@@ -40,7 +40,7 @@ func runCommand(args []string, errChan chan bool) {
 	go func() {
 		cmdErr := cmd.Wait()
 		// TODO: Based on config, either exit here or nah
-		if cmdErr.Error() != "signal: killed" {
+		if cmdErr != nil && cmdErr.Error() != "signal: killed" {
 			// errChan <- true
 			fmt.Printf("\nCommand exited with error, hit enter to try again\n")
 		}
