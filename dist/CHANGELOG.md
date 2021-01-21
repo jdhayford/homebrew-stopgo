@@ -1,3 +1,3 @@
 ## Changelog
 
-5954704 Update brew name
+843aed0 Update configs

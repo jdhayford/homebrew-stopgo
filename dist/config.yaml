@@ -10,10 +10,10 @@ milestones:
     name: homebrew-stopgo
   name_template: '{{ .Tag }}'
 brews:
-- name: homebrew-stopgo
+- name: stopgo
   tap:
-    owner: repo-owner
-    name: homebrew-tap
+    owner: jdhayford
+    name: homebrew-stopgo
   commit_author:
     name: jdhayford
     email: jdhayford@gmail.com
