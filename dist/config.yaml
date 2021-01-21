@@ -23,8 +23,8 @@ brews:
   - name: zsh
     type: optional
   license: MIT
-  url_template: https://gitlab.com/jdhayford/homebrew-stopgo/uploads/{{ .ArtifactName
-    }}
+  url_template: https://github.com/jdhayford/homebrew-stopgo/releases/download/{{
+    .Tag }}/{{ .ArtifactName }}
   goarm: "6"
 scoop:
   name: homebrew-stopgo
