@@ -5,21 +5,21 @@
 class Stopgo < Formula
   desc ""
   homepage ""
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://gitlab.com/jdhayford/homebrew-stopgo/uploads/homebrew-stopgo_0.1.11_Darwin_x86_64.tar.gz"
-    sha256 "c6811a90fcbc396a511e7096cc4d407119fbfbd5a7785862d171d6b13129adcd"
+    url "https://github.com/jdhayford/homebrew-stopgo/releases/download/v0.1.12/homebrew-stopgo_0.1.12_Darwin_x86_64.tar.gz"
+    sha256 "aaf5c87252719385d60809b4386b2bb810b2ecd00b637179f1c01411e140a125"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://gitlab.com/jdhayford/homebrew-stopgo/uploads/homebrew-stopgo_0.1.11_Linux_x86_64.tar.gz"
-    sha256 "5a8328014bb7b8b0163e7035dfae49b9b1dbe5bb8cf0505df243d0a85d04051b"
+    url "https://github.com/jdhayford/homebrew-stopgo/releases/download/v0.1.12/homebrew-stopgo_0.1.12_Linux_x86_64.tar.gz"
+    sha256 "4f823301db80eb21529e27f2998b4ccc8e928c8a753977a9ba5e87561dae5808"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://gitlab.com/jdhayford/homebrew-stopgo/uploads/homebrew-stopgo_0.1.11_Linux_arm64.tar.gz"
-    sha256 "3309f268d4545011de7d50ebca48af950bccbc1529a4a3928ef61ee97ecab17d"
+    url "https://github.com/jdhayford/homebrew-stopgo/releases/download/v0.1.12/homebrew-stopgo_0.1.12_Linux_arm64.tar.gz"
+    sha256 "5daa99779aeb6d01143a9452943838c6c8d69bd715dade33d4232d446910269f"
   end
 
   depends_on "git"
