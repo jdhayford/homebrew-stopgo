@@ -1,4 +1,4 @@
 ## Changelog
 
-c18829e Add brew stuff
-5b00357 Rm dist
+45f2df0 Update
+b589ce1 Update tap config
