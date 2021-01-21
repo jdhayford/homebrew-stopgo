@@ -66,7 +66,7 @@ func main() {
 			input := consolescanner.Text()
 			if len(input) == 0 {
 				cancel()
-				fmt.Printf("\nstopgo %v\n", strings.Join(commandArgs, " "))
+				fmt.Printf("> %v\n", strings.Join(commandArgs, " "))
 				runCommand(commandArgs, errChan)
 			}
 		}
