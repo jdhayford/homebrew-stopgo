@@ -1,4 +1,3 @@
 ## Changelog
 
-2d4c8c1 Update
-004a726 Use all archives
+406c5fd Adds formula
