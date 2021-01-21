@@ -13,7 +13,7 @@ brews:
 - name: stopgo
   tap:
     owner: jdhayford
-    name: homebrew-stopgo
+    name: stopgo
   commit_author:
     name: jdhayford
     email: jdhayford@gmail.com

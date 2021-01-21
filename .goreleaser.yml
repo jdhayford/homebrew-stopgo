@@ -49,7 +49,7 @@ brews:
     # Default for gitlab is "https://gitlab.com/<repo_owner>/<repo_name>/uploads/{{ .ArtifactUploadHash }}/{{ .ArtifactName }}"
     # Default for github is "https://github.com/<repo_owner>/<repo_name>/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
     # Default for gitea is "https://gitea.com/<repo_owner>/<repo_name>/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
-    url_template: "https://github.com/jdhayford/homebrew-stopgo/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/jdhayford/stopgo/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     # Git author used to commit to the repository.
     # Defaults are shown.
