@@ -1,3 +1,3 @@
 ## Changelog
 
-406c5fd Adds formula
+8b27119 Bing
