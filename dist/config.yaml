@@ -17,24 +17,12 @@ brews:
   commit_author:
     name: jdhayford
     email: jdhayford@gmail.com
-  caveats: How to use this binary
-  install: |
-    bin.install "program"
-    ...
+  install: bin.install "homebrew-stopgo"
   dependencies:
   - name: git
   - name: zsh
     type: optional
-  test: |
-    system "#{bin}/program --version"
-    ...
-  conflicts:
-  - svn
-  - bash
-  description: Software to create fast and easy drum rolls.
-  homepage: https://jdhayford.io/
   license: MIT
-  download_strategy: CurlDownloadStrategy.
   url_template: https://gitlab.com/jdhayford/homebrew-stopgo/uploads/{{ .ArtifactUploadHash
     }}/{{ .ArtifactName }}
   goarm: "6"
