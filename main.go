@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"log"
 	"os"
 	"os/exec"
 	"strings"
@@ -50,7 +49,8 @@ func runCommand(args []string, errChan chan bool) {
 
 func main() {
 	if len(os.Args) == 1 {
-		log.Fatal("No command given to stopgo")
+		fmt.Println("Usage: stopgo [some command]")
+		return
 	}
 
 	errChan := make(chan bool)
