@@ -5,21 +5,21 @@
 class Stopgo < Formula
   desc ""
   homepage ""
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/jdhayford/stopgo/releases/download/v0.3.1/stopgo_0.3.1_Darwin_x86_64.tar.gz"
-    sha256 "d6c65a1cb70eff1eb209069ce91010cd3dd2dbdc32c8562fa178cc2067fa5784"
+    url "https://github.com/jdhayford/stopgo/releases/download/v0.3.2/stopgo_0.3.2_Darwin_x86_64.tar.gz"
+    sha256 "2d9d392823fc5e6e9d74b0f27e778b7efc12d0e4fd2643f80fee57d1932b7e98"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jdhayford/stopgo/releases/download/v0.3.1/stopgo_0.3.1_Linux_x86_64.tar.gz"
-    sha256 "3dbefb7274b68bfa7a60d57733e828064ba641b7c9a4339fed0805272d4248bf"
+    url "https://github.com/jdhayford/stopgo/releases/download/v0.3.2/stopgo_0.3.2_Linux_x86_64.tar.gz"
+    sha256 "39a0c770b4edb8b8ca97be16ec4240f5fd690f44741490dbba911080c1af4cb8"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/jdhayford/stopgo/releases/download/v0.3.1/stopgo_0.3.1_Linux_arm64.tar.gz"
-    sha256 "1df406e97f87473b678765def655c6e4c325c38d143067d03db9bc786f98fea0"
+    url "https://github.com/jdhayford/stopgo/releases/download/v0.3.2/stopgo_0.3.2_Linux_arm64.tar.gz"
+    sha256 "f05846731c2c5b65b4e794375df165dde880914d11629b39c0cd5f4835dcca3d"
   end
 
   depends_on "git"
